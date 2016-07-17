@@ -1,0 +1,141 @@
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="net.sandi.myapplication.fragments.PulseFragment">
+
+        <ImageView
+            android:id="@+id/relative_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pulse_background"
+            android:scaleType="centerCrop"/>
+        <LinearLayout
+            android:id="@+id/linear_icons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_margin="4dp"
+            >
+            <ImageView
+                android:id="@+id/img_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_person_outline_black_24dp"
+                android:layout_margin="8dp"
+                />
+            <ImageView
+                android:id="@+id/img_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search_black_24dp"
+                android:layout_margin="8dp"/>
+            <ImageView
+                android:id="@+id/img_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_settings_black_24dp"
+                android:layout_margin="8dp"
+                />
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_profile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/brave"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="68dp"
+            />
+        <TextView
+            android:id="@+id/txt_good_morning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good Morning, Aung Pyae"
+            android:textSize="20sp"
+            android:textColor="#FFF"
+            android:layout_below="@id/img_profile"
+            android:layout_marginTop="4dp"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/txt_how_are_you"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Here are your top stories for the day"
+            android:layout_below="@id/txt_good_morning"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            android:layout_centerHorizontal="true"/>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/txt_how_are_you"
+            android:background="#FFF"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/txt_how_are_you"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Editor's Pick"
+                        android:layout_weight="1"
+                        android:textColor="#000"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="3h"
+                        android:layout_weight="1"
+                        android:gravity="right"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txt_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:text="China Has High-Performing Companies-It Just Needs a Lot More of Them"
+                    android:layout_marginTop="16dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gordon Orr/ 131 shares"
+                    android:layout_marginTop="8dp"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/pulse"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="16dp"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
